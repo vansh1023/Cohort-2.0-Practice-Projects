@@ -1,9 +1,83 @@
+@font-face {
+    font-family: font1;
+    src: url(./BBHSansBogle-Regular.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(./Outfit-Medium.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: font2;
 }
+
 html , body{
     height: 100%;
     width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    padding-top: 1px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.card{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    margin: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .bottom{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, black);
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.3s;
+}
+
+.bottom h3{
+    color: white;
+}
+
+.bottom i{
+    color: white;
+}
+
+.card:hover .bottom{
+    bottom: 0;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+main::-webkit-scrollbar {
+    display: none;
 }
