@@ -265,3 +265,146 @@ main{
     font-size: 1.5rem;
     color: #98999B;
 }
+
+
+
+
+
+
+
+/* service section */
+
+.service-section{
+    height: 190vh;
+    padding: 3.5rem 2.8rem 2.4rem 2.8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 1.2fr 1.2fr;
+    grid-template-areas: "button button button button"
+                         "details details details details"
+                         "card1 card2 card3 card4"
+                         "card5 card6 card7 card8"
+    ;
+    grid-gap: 20px;
+}
+
+.service-section .card{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.service-section .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service-button{
+    grid-area: button;
+    align-content: end;
+}
+
+.service-offerings{
+    grid-area: details;
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-offerings h2{
+    width: 45%;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.service-offerings p{
+    width: 50%;
+    padding-right: 1rem;
+    color: #98999B;
+    font-size: 1.2rem;
+    word-spacing: 0.3rem;
+}
+
+.service-section .card-1{
+    grid-area: card1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: #025efeec;
+}
+
+/* .service-section .card-details{
+    color: white;
+} */
+
+.service-section .card-details h2{
+    color: #B3EDFD;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+.service-section .card-details h3{
+    color: #52a2f2;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+.service-section .card-details p{
+    color: #52A1F2;
+    font-size: 1.2rem;
+}
+
+.card-1 .card-icons{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.card-icons .icon{
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #52a1f2; 
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-section .card-2{
+    grid-area: card2;
+    object-position: left;
+}
+
+.service-section .card-3{
+    grid-area: card3;
+}
+
+.service-section .card-4{
+    grid-area: card4;
+}
+
+.service-section .card-5{
+    grid-area: card5;
+}
+
+.service-section .card-6{
+    grid-area: card6;
+}
+
+.service-section .card-7{
+    grid-area: card7;
+}
+
+.service-section .card-8{
+    grid-area: card8;
+}
+
+
+
+
+
+
+/* milestones section */
