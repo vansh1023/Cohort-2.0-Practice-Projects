@@ -2,8 +2,134 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: "Roboto", sans-serif;}
 html , body{
     height: 100%;
+    width: 100%;;
+}
+
+body{
+    color: #0F1012;
+}
+
+.container{
+    height: 100%;
     width: 100%;
+}
+
+header{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.header-logo img{
+    height: 3rem;
+}
+
+.header-logo h4{
+    font-size: 2rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-left: 4rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #0f1012e3;
+    font-size: 1.1rem;
+    font-weight: 450;
+}
+
+.header-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.button{
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.button-transparent{
+    border: 2px solid #0061FE;
+    color: #0061FE;
+}
+
+.button-color{
+    border: none;
+    background-color: #0061FE;
+    color: rgba(255, 255, 255, 0.777);
+}
+
+
+
+/* main section */
+
+main{
+    padding: 0 15px;
+}
+
+.hero-section{
+    height: 135vh;
+    background-color: #F6F7F9;
+    padding: 3.5rem 2.8rem 2.4rem 2.8rem;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    grid-template-rows: 0.7fr 0.7fr 4fr;
+    grid-template-areas: "h2 p"
+                         "h2 buttons"
+                         "image image"
+    ;
+    grid-gap: 10px;
+}
+
+.hero-section h2{
+    grid-area: h2;
+    font-size: 3.4rem;
+    font-weight: 400;
+}
+
+.hero-section p{
+    grid-area: p;
+    font-size: 1.3rem;
+    color: #98999B;
+    line-height: 2rem;
+}
+
+.hero-section-buttons{
+    grid-area: buttons;
+}
+
+.hero-section-image{
+    grid-area: image;
+    background-color: blue;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hero-section-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
