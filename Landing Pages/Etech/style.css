@@ -33,7 +33,7 @@ header h2 {
 }
 
 main .hero-section {
-  padding: 10px 30px;
+  padding: 10px 30px 0 30px;
 }
 main .hero-section h3 {
   font-size: 2rem;
@@ -77,4 +77,15 @@ main .hero-section img {
   width: 100%;
   margin-top: 1.5rem;
   border-radius: 5px;
+}
+main .examples-section {
+  background-color: rgba(40, 40, 130, 0.873);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .examples-section h2 {
+  font-size: 0.9rem;
+  color: rgba(226, 217, 217, 0.845);
+  font-family: montserrat-med;
 }/*# sourceMappingURL=style.css.map */
