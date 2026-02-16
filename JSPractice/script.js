@@ -236,3 +236,105 @@
 //         break;
 //     }
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Functions And Arrays
+
+// Level 1
+
+
+// function SayHello(){
+//     console.log("Hello Javascript");
+// }
+// SayHello();
+
+
+
+
+// function add(a,b){
+//     return a+b;
+// }
+// let sum = add(5,20);
+// console.log(sum);
+
+
+
+
+// function greet(name = "aryan"){
+//     console.log(`Hi ${name}`);
+// }
+// greet();
+
+
+
+
+// function add(...val){
+//     let sum = 0;
+//     val.forEach((value) => {
+//         sum += value;
+//     })
+//     console.log(sum);
+// }
+// add(5,5,5,5,5,4,8,6,4,5,12,3,454,54,54);
+
+
+
+
+
+// function add(...val){
+//     let sum = val.reduce((acc, value) => {
+//         return acc + value;
+//     }, 0)
+//     console.log(sum);
+// }
+// add(5,5,5,5,5,4,8,6,4,5,12,3,454,54,54);
+
+
+
+
+// (function(){
+//     console.log("I run instantly");
+// })();
+
+
+
+// function outer(){
+//     let a = 10;
+//     function inner(){
+//         console.log(a);
+//     }
+//     inner();
+// }
+// outer();
+
+
+
+// const person = {
+//     name: "xyz",
+//     age: 100,
+//     city: "abc",
+// };
+// for(let key in person){
+//     console.log(person[key]);
+// }
+
+
+
+// setTimeout(() => {
+//     console.log("Time's up")
+// }, 2000);
