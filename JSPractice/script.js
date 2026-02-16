@@ -399,3 +399,24 @@
 //     return val.length > 3;
 // });
 // console.log(newarr2);
+
+
+
+
+
+
+
+// DOM
+
+// Random Color Generator
+
+// let btn = document.querySelector('#btn');
+// let rcg = document.querySelector('#rcg');
+
+// btn.addEventListener('click', () => {
+//     let a = Math.floor(Math.random()*256);
+//     let b = Math.floor(Math.random()*256);
+//     let c = Math.floor(Math.random()*256);
+
+//     rcg.style.backgroundColor = `rgb(${a},${b},${c})`;
+// });

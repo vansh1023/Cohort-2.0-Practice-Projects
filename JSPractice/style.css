@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,4 +6,23 @@
 html , body{
     height: 100%;
     width: 100%;
-}
+} */
+
+/* #rcg{
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;
+    border: 2px solid black;
+} */
+
+/* #btn{
+    margin-top: 5rem;
+    margin-left: 2rem;
+    height: 3rem;
+    width: 7rem;
+    background-color: aqua;
+    font-weight: 500;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: 1px solid black;
+} */
