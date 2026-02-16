@@ -338,3 +338,64 @@
 // setTimeout(() => {
 //     console.log("Time's up")
 // }, 2000);
+
+
+
+
+
+
+// level 2
+
+// function outer(inner,[c,d]){
+//     inner(c,d);
+// }
+
+// outer((a, b) => {
+//     console.log(a+b);
+// },[1,2]);
+
+
+
+
+// function demo({name, age}){
+//     console.log(name, age);
+// }
+// demo({
+//     name: "abc",
+//     age: 100,
+// });
+
+
+
+// let arr = [1,2,3,4,5];
+// let newarr = arr.map((val) => {
+//     return val * val;
+// })
+// console.log(newarr);
+
+
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+// let newarr = arr.filter((val) => {
+//     return val % 2 === 0;
+// });
+// console.log(newarr);
+
+
+
+
+// let salary = [1000, 2000, 3000];
+// let totalSalary = salary.reduce((acc, val) => {
+//     return acc + val;
+// }, 0);
+// console.log(totalSalary);
+
+
+// let names = ["abc", "kckldns", "nkfgdfg", "kdfgsfd", "kjds", "kjdhjdhfsh", "kjdhkjsdfsfsfsjk", "kjeg"];
+// let newarr1 = names.some((val) => {
+//     return val.length > 3;
+// });
+// console.log(newarr1);
+// let newarr2 = names.every((val) => {
+//     return val.length > 3;
+// });
+// console.log(newarr2);
