@@ -420,3 +420,61 @@
 
 //     rcg.style.backgroundColor = `rgb(${a},${b},${c})`;
 // });
+
+
+
+// Random card GEnerator
+
+// let btn = document.querySelector('button');
+// let main = document.querySelector('main');
+// let arr = ["Hello", "Namaste", "Bonjour", "Hola", "Salaam", "Ciao","Hey!", "Hi there!", "What's up?", "Howdy!", "Yo!","Good Morning", "Good Afternoon", "Good Evening", "Greetings", "Welcome"];
+
+
+// btn.addEventListener('mousemove', () => {
+//     var div = document.createElement('div');
+
+//     var x = Math.random()*80;
+//     var y = Math.random()*80;
+//     var z = Math.random()*360;
+//     var a = Math.floor(Math.random()*256);
+//     var b = Math.floor(Math.random()*256);
+//     var c = Math.floor(Math.random()*256);
+
+
+//     div.style.height = '10rem';
+//     div.style.width = '10rem';
+//     div.style.position = 'absolute';
+
+//     div.style.top = `${x}%`;
+//     div.style.left = `${y}%`;
+//     div.style.rotate = `${z}deg`;
+//     div.style.backgroundColor = `rgb(${a},${b},${c})`;
+
+//     main.appendChild(div);
+// });
+
+
+// btn.addEventListener('mousemove', () => {
+//     var h1 = document.createElement('h1');
+
+//     var i = Math.floor(Math.random()*arr.length);
+//     var x = Math.random()*80;
+//     var y = Math.random()*80;
+//     var scl = Math.random()*4;
+//     var z = Math.random()*360;
+//     var a = Math.floor(Math.random()*256);
+//     var b = Math.floor(Math.random()*256);
+//     var c = Math.floor(Math.random()*256);
+
+//     h1.style.position = 'absolute';
+
+//     h1.innerHTML = arr[i];
+
+//     h1.style.top = `${x}%`;
+//     h1.style.left = `${y}%`;
+//     h1.style.scale = scl;
+//     h1.style.rotate = `${z}deg`
+//     h1.style.color = `rgb(${a},${b},${c})`;
+
+//     main.appendChild(h1);
+// });
