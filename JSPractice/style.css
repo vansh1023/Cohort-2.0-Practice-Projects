@@ -52,3 +52,66 @@ button{
 button:active{
     scale: 0.95;
 } */
+
+
+/* main{
+    background-color: rgba(0, 0, 0, 0.848);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    height: 400px;
+    width: 600px;
+    background-color: rgb(7, 90, 90);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.outer{
+    width: 100%;
+    height: 50px;
+    background-color: skyblue;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
+.inner{
+    width: 0%;
+    height: 100%;
+    background-color: rgba(14, 194, 1, 0.9);
+    border-radius: 50px;
+}
+
+
+.bottom{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2{
+    font-size: 35px;
+    color: white;
+}
+
+button{
+    color: white;
+    height: 3.5rem;
+    width: 9rem;
+    background-color: rgb(3, 78, 3);
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+button:active{
+    scale: 0.95;
+} */

@@ -478,3 +478,32 @@
 
 //     main.appendChild(h1);
 // });
+
+
+
+
+
+
+// let btn = document.querySelector('button');
+// let inner = document.querySelector('.inner');
+// let h2 = document.querySelector('h2');
+// let grow = 0;
+
+// btn.addEventListener('click', () => {
+
+//     let num = 50 + Math.floor(Math.random()*50);
+//     console.log(num);
+
+//     let int = setInterval(() => {
+//         grow++;
+//         inner.style.width = `${grow}%`;
+//         h2.innerHTML = `${grow}%`;
+//         btn.style.pointerEvents = 'none';
+//     }, num);
+
+//     setInterval(() => {
+//         clearInterval(int);
+//         btn.innerHTML = 'Downloaded';
+//         btn.style.backgroundColor = 'rgba(135, 173, 135, 0.73)';
+//     }, num*100);
+// });
