@@ -98,13 +98,13 @@ button:active{
 h2{
     font-size: 35px;
     color: white;
-}
+}*/
 
-button{
+/* button{
     color: white;
     height: 3.5rem;
     width: 9rem;
-    background-color: rgb(3, 78, 3);
+    background-color: rgb(11, 162, 11);
     font-weight: 500;
     font-size: 1.2rem;
     cursor: pointer;
@@ -114,4 +114,4 @@ button{
 
 button:active{
     scale: 0.95;
-} */
+}  */
