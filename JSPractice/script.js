@@ -506,4 +506,159 @@
 //         btn.innerHTML = 'Downloaded';
 //         btn.style.backgroundColor = 'rgba(135, 173, 135, 0.73)';
 //     }, num*100);
+// }); 
+
+
+
+
+
+// OOPS
+
+// const user = {
+//     name: "abc",
+//     email: "xyz@gmail.com",
+//     login: function(){
+//         console.log("logged in")
+//     }
+// }
+
+// class User{
+//     constructor(name, email){
+//         this.name = name;
+//         this.email = email;
+//     }
+//     login(){
+//         console.log(`${this.name} logged in`);
+//     }
+// }
+
+// let user1 = new User("abc", "xyz@gmail.com");
+
+
+
+// class Car{
+//     constructor(brand, speed){
+//         this.brand = brand;
+//         this.speed = speed;
+//     }
+//     drive(){
+//         return (`${this.brand} - ${this.speed}`);
+//     }
+// }
+
+// let car1 = new Car("Audi", 200);
+// let car2 = new Car("BMW", 180);
+// let car3 = new Car("Maruti Suzuki", 100);
+// let car4 = new Car("Honda", 120);
+// let car5 = new Car("Hyundai", 150);
+
+
+// const user = {
+//     name: "abc"
+// }
+// function print(){
+//     console.log(this.name);
+// }
+
+// print.call(user);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Async JS
+
+// function abcd(fn){
+//     fn(function(fn3){
+//         fn3(function(){
+//             console.log("hey");
+//         });
+//     });
+// }
+
+
+
+// abcd(function(fn2){
+//     fn2(function(fn4){
+//         fn4();
+//     });
 // });
+
+
+
+// function afterDelay(time, fn){
+//     setTimeout(()=>{
+//         fn();
+//     },time);
+// }
+
+// afterDelay(2000, function(){
+//     console.log("Callback executed");
+// });
+
+
+
+
+// function getUser(username, fn){
+//     console.log("Waiting for user data...");
+//     setTimeout(() => {
+//         console.log("User ka data nikal gya");
+//         fn({id:1, username})
+//     }, 1000);
+// }
+
+// function getUserPosts(id, fn){
+//     console.log("Searching for posts...");
+//     setTimeout(() => {
+//         fn(["hello", "hi", "good day", "kya haal chal"]);
+//     }, 2000);
+// }
+
+// getUser("vansh", function({id, username}){
+//     setTimeout(() => {
+//         console.log(`chalo ab ${username} ki posts search karte hai`);
+//     }, 1000);
+//     getUserPosts(id, function(allPosts){
+//         console.log(`Ye rhi ${username} ki posts - ${allPosts}`);
+//     });
+// })
+
+
+
+// function loginUser(username, fn){
+//     console.log("Waiting for user login...");
+//     setTimeout(() => {
+//         console.log(`${username} logged in successfully`);
+//         fn({id:1, username});
+//     }, 1000);
+// }
+
+// function fetchPermissions(id, fn){
+//     setTimeout(() => {
+//         fn(["hi", "hello", "allow permission"]);
+//     }, 1000);
+// }
+
+// function loadDashboard(permissions, fn){
+//     setTimeout(() => {
+//         fn("dashboard loaded");
+//     }, 1000);
+// }
+
+// loginUser("vansh", function(id, username){
+//     fetchPermissions(id, function(permissions){
+//         loadDashboard(permissions, function(msg){
+//             console.log(msg);
+//         })
+//     })
+// })
