@@ -662,3 +662,34 @@
 //         })
 //     })
 // })
+
+
+
+
+
+
+
+
+// Waether app logic
+
+// async function getWeather(city){
+//     try {
+//         let apikey = `b92e57938eaebc6ded1fcf3a2f5b4bc3`;
+
+//         let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
+
+//         let raw = await fetch(url);
+//         if(!raw.ok){
+//             throw new Error("Something went wrong");
+            
+//         }
+//         let data = await raw.json();
+//         let currtemp = Math.round((data.main.temp - 273.15)*100)/100;
+//         console.log(`${currtemp}°C`);
+
+//     } catch (err) {
+//         console.log(err.message);
+//     }
+// }
+
+// getWeather("Muzaffarnagar");
