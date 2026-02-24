@@ -693,3 +693,44 @@
 // }
 
 // getWeather("Muzaffarnagar");
+
+
+
+
+// Emails simulator
+
+// const users = [
+//     "abc@gmail.com",
+//     "xyz@gmail.com",
+//     "pqr@gmail.com",
+//     "lmn@gmail.com",
+//     "def@gmail.com"
+// ];
+
+// function sendEmail(email){
+//     return new Promise((resolve, reject) => {
+//         let time = Math.floor(Math.random()*5);
+//         setTimeout(() => {
+//             let probability = Math.floor(Math.random()*2);
+//             if(probability === 0) resolve("Email send successfully");
+//             else reject("Email not send, Please try again after some time");
+//         }, time*1000);
+//     })
+// };
+
+
+// async function setEmails(userlist){
+//     let allresponses = userlist.map((email) => {
+//         return sendEmail(email)
+//             .then((data) => {
+//                 return data;
+//             })
+//             .catch((err) => {
+//                 return err;
+//             })
+//     });
+//     let ans = await Promise.all(allresponses);
+//     console.log(ans);
+// }
+
+// setEmails(users);
