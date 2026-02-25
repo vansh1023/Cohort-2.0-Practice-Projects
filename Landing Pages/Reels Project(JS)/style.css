@@ -106,7 +106,7 @@ section::-webkit-scrollbar {
     padding: 5px 15px;
     width: 40px;
     position: absolute;
-    right: 50px;
+    right: 55px;
     bottom: 80px;
     transform: translateX(100%);
     display: flex;
@@ -129,3 +129,17 @@ section::-webkit-scrollbar {
 .love{
     color: red;
 }
+
+.right > div{
+    width: 50px;
+    cursor: pointer;
+}
+
+.right div h4{
+    pointer-events: none;
+}
+
+.right div h6{
+    pointer-events: none;
+}
+
