@@ -733,4 +733,221 @@
 //     console.log(ans);
 // }
 
-// setEmails(users);
+// setEmails(users); 
+
+
+// Js Questions Practice
+
+// let fullName = "Vansh Chaudhary";
+// let hobby =  "Learning new things";
+
+// console.log(`My name is ${fullName} and my hobby is ${hobby}`);
+
+// let ans = 45*2-10;
+// console.log(ans); 
+
+// let date = new Date();
+// let year = date.getFullYear();
+// console.log(year);
+
+// let firstName = "vansh";
+// let lastName = "chaudhary";
+// console.log(`My full name is ${firstName} ${lastName}`);
+
+// let i = 1;
+// let sum = 0;
+// while(i<=10){
+//     sum += i;
+//     i++;
+// }
+// console.log(sum);
+
+
+// let name = "Javascript";
+// for(let char of name){
+//     console.log(char);
+// }
+
+
+// let sum = 0;
+// for(let i=1; i<=20; i++){
+//     if(i%2 == 0) continue;
+//     sum += i;
+// }
+// console.log(sum);
+
+
+
+// let i = 5;
+// do{
+//     console.log(i);
+//     i--;
+// } while(i>0);
+
+
+// for(let i=1; i<=3; i++){
+//     let row = "";
+//     for(let j=1; j<=3; j++){
+//         row += "* ";
+//     }
+//     console.log(row);
+// }
+
+
+// let arr = [1,2,3,4,5];
+// let i = 0; 
+// let j = arr.length-1;
+// let temp;
+// while(i<j){
+//     temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++;
+//     j--;
+// }
+// console.log(arr);
+
+
+// let arr = ["KGF", "Baahubali", "Simba", "Suryavanshi", "Pushpa"];
+// console.log(arr.join("-"));
+
+// let arr = [1,2,3,4,5];
+// console.log(arr.indexOf(5))
+// let newArr = arr.slice(0,3);
+// console.log(newArr);
+
+// let arr1 = [1,2,3,4,5];
+// let arr2 = [6,7,8,9,10];
+// let newArr = arr1.concat(arr2);
+// console.log(newArr)
+
+// let arr1 = [1,2,3,4,5];
+// let arr2 = [...arr1];
+// console.log(arr1 === arr2);
+
+// function EvenOrOdd(num){
+//     if(num % 2 === 0){
+//         return "Even number";
+//     }
+//     else{
+//         return "Odd number";
+//     }
+// }
+// let ans = EvenOrOdd(50);
+// console.log(ans)
+
+
+// function add([val1, ...arr]){
+//     let sum = 0;
+//     arr.forEach(elem => {
+//         sum += elem;
+//     });
+//     console.log(sum);
+// }
+
+// add([1,2,3,4]);
+
+
+// function fact(n){
+//     if(n === 1){
+//         return 1;
+//     }
+//     return n * fact(n-1);
+// }
+// console.log(fact(5));
+
+
+// function largeElem(arr){
+//     let large = -Infinity;
+//     arr.forEach(elem => {
+//         if(elem > large){
+//             large = elem;
+//         }
+//     });
+//     return large;
+// }
+
+// console.log(largeElem([1,8,5,9,7,2,3,4,6]));
+
+
+// function check(n){
+//     let isPrime = true;
+//     for(let i=2; i<n; i++){
+//         if(n%i === 0){
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if(isPrime){
+//         console.log("prime hai")
+//     }
+//     else{
+//         console.log("Prime nhi hai")
+//     }
+// }
+
+// check(9);
+
+
+// const obj = {
+//     name: "abc",
+//     rollno: 123
+// }
+// console.log(obj["name"])
+
+
+// let n = 1;
+// for(let i=1; i<=10; i++){
+//     let row = "";
+//     n++;
+//     for(let j=1; j<=n; j++){
+//         if(j === 1 || j === n || i === 10){
+//             row += ("* ");
+//         }
+//         else{
+//             row += ("  ");
+//         }
+//     }
+//     console.log(row);
+// }
+
+
+// to do 
+
+// let todos = [];
+
+// function addTask(task) {
+//   todos.push(task);
+//   console.log("Task Added!");
+// }
+
+// function listTasks() {
+//   console.log("Your Tasks:");
+//   for (let i = 0; i < todos.length; i++) {
+//     console.log(i + 1 + ". " + todos[i]);
+//   }
+// }
+
+// function deleteTask(index) {
+//   if (index >= 0 && index < todos.length) {
+// todos.splice(index, 1);
+//     console.log("Task Deleted!");
+//   } else {
+//     console.log("Invalid Index");
+//   }
+// }
+
+// function totalTasks() {
+//   console.log("Total Tasks:", todos.length);
+// }
+
+
+
+// addTask("Learn JS");
+// addTask("Practice DSA");
+// listTasks();
+
+// deleteTask(0);
+// listTasks();
+
+// totalTasks();
