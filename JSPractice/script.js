@@ -951,3 +951,28 @@
 // listTasks();
 
 // totalTasks();
+
+
+// Number guessing game 
+
+
+// let randomNumber = Math.floor(Math.random() * 100) + 1;
+// let attempts = 0;
+
+// function guessNumber(userGuess) {
+//   attempts++;
+
+//   if (userGuess > randomNumber) {
+//     console.log("Too High!");
+//   } else if (userGuess < randomNumber) {
+//     console.log("Too Low!");
+//   } else {
+//     console.log("Correct! 🎉");
+//     console.log("Attempts:", attempts);
+//   }
+// }
+
+
+// guessNumber(50);
+// guessNumber(25);
+// guessNumber(75);
