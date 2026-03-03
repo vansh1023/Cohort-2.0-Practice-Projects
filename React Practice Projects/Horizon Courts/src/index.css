@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Aeonik;
+    src: url(./assets/fonts/AeonikTRIAL-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Navbar */
+
+
+.main-nav{
+    height: 60px;
+    width: 96%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Aeonik;
+    /* background-color: lightseagreen; */
+}
+
+.main-nav>h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.all-nav-links{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.nav-link{
+    font-size: 18px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.nav-link.active{
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.nav-book-button{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+}
+
+.nav-book-button h3{
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0;
+}
+
+
+
+
+
+/* Main*/
+
+
+
+.main-section{
+    flex: 1;
+    width: 96%;
+    font-family: Aeonik;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url('https://padelsouq.com/cdn/shop/articles/master-the-basics-of-padel-the-fundamentals-and-rules-padelsouq_1024x1024.png?v=1727684182');
+}
+
+.hero-section{
+    height: 40vh;
+    width: 60%;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.hero-section h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+}
+
+.hero-section h2 span{
+    display: block;
+}
+
+.hero-section h5{
+    width: 65%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.958);
+}
+
+.hero-section button{
+    margin-top: 25px;
+    padding: 15px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.875);
+    cursor: pointer;
+}
