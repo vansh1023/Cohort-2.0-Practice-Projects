@@ -912,6 +912,11 @@
 // }
 
 
+
+
+
+
+
 // to do 
 
 // let todos = [];
@@ -953,6 +958,12 @@
 // totalTasks();
 
 
+
+
+
+
+
+
 // Number guessing game 
 
 
@@ -976,3 +987,31 @@
 // guessNumber(50);
 // guessNumber(25);
 // guessNumber(75);
+
+
+
+
+// Password Generator
+
+// function generatePassword(length) {
+
+//   const lower = "abcdefghijklmnopqrstuvwxyz";
+//   const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//   const numbers = "0123456789";
+//   const symbols = "!@#$%^&*()";
+
+//   const allChars = lower + upper + numbers + symbols;
+
+//   let password = "";
+
+//   for (let i = 0; i < length; i++) {
+//     const randomIndex = Math.floor(Math.random() * allChars.length);
+//     password += allChars[randomIndex];
+//   }
+
+//   return password;
+// }
+
+// const password = generatePassword(12);
+
+// console.log("Generated Password:", password);
