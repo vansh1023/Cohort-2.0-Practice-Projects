@@ -1015,3 +1015,31 @@
 // const password = generatePassword(12);
 
 // console.log("Generated Password:", password);
+
+
+
+// Debounce function
+
+
+
+// function debounce(func, delay) {
+//   let timer;
+
+//   return function (...args) {
+//     clearTimeout(timer);
+
+//     timer = setTimeout(() => {
+//       func.apply(this, args);
+//     }, delay);
+//   };
+// }
+
+// function search(query) {
+//   console.log("Searching for:", query);
+// }
+
+// const debouncedSearch = debounce(search, 1000);
+
+// debouncedSearch("JavaScript");
+// debouncedSearch("JavaScript Debounce");
+// debouncedSearch("JavaScript Debounce Example");
