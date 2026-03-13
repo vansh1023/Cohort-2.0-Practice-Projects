@@ -1067,3 +1067,26 @@
 // const nestedArray = [1, [2, 3], [4, [5, 6]], 7];
 
 // console.log(flattenArray(nestedArray));
+
+
+
+
+// Character Frequency Counter
+
+
+
+function charFrequency(str) {
+  const map = {};
+
+  for (let char of str) {
+    if (map[char]) {
+      map[char]++;
+    } else {
+      map[char] = 1;
+    }
+  }
+
+  return map;
+}
+
+console.log(charFrequency("javascript"));
