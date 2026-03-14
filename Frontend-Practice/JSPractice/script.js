@@ -1075,18 +1075,46 @@
 
 
 
-function charFrequency(str) {
-  const map = {};
+// function charFrequency(str) {
+//   const map = {};
 
-  for (let char of str) {
-    if (map[char]) {
-      map[char]++;
-    } else {
-      map[char] = 1;
-    }
-  }
+//   for (let char of str) {
+//     if (map[char]) {
+//       map[char]++;
+//     } else {
+//       map[char] = 1;
+//     }
+//   }
 
-  return map;
-}
+//   return map;
+// }
 
-console.log(charFrequency("javascript"));
+// console.log(charFrequency("javascript"));
+
+
+
+
+// Throttle function
+
+
+
+// function throttle(func, limit) {
+//   let lastCall = 0;
+
+//   return function (...args) {
+//     const now = Date.now();
+
+//     if (now - lastCall >= limit) {
+//       lastCall = now;
+//       func.apply(this, args);
+//     }
+//   };
+// }
+
+// function logMessage() {
+//   console.log("Function executed at:", new Date().toLocaleTimeString());
+// }
+
+// const throttledLog = throttle(logMessage, 2000);
+
+// setInterval(throttledLog, 500);
