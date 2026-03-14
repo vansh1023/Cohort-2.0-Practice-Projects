@@ -1118,3 +1118,41 @@
 // const throttledLog = throttle(logMessage, 2000);
 
 // setInterval(throttledLog, 500);
+
+
+
+
+
+// Deep clone function 
+
+
+
+// function deepClone(obj) {
+//   if (obj === null || typeof obj !== "object") {
+//     return obj;
+//   }
+
+//   if (Array.isArray(obj)) {
+//     return obj.map(item => deepClone(item));
+//   }
+
+//   const cloned = {};
+
+//   for (let key in obj) {
+//     if (obj.hasOwnProperty(key)) {
+//       cloned[key] = deepClone(obj[key]);
+//     }
+//   }
+
+//   return cloned;
+// }
+
+// const original = {
+//   name: "Vansh",
+//   skills: ["JavaScript", "React"],
+//   address: { city: "Roorkee", state: "Uttarakhand" }
+// };
+
+// const copied = deepClone(original);
+
+// console.log(copied);
