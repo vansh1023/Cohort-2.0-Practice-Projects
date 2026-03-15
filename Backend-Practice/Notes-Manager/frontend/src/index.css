@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body, #root{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+  background-color: rgb(17, 15, 15);
+  padding: 1rem;
+}
+
+.form{
+  padding-block: 2rem;
+  margin-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: white;
+  background-color: rgb(97, 94, 102);
+  border-radius: 10px;
+}
+
+.input{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+
+.input1{
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(68, 46, 46);
+  color: wheat;
+  font-size: 1rem;
+}
+
+.input2{
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(68, 46, 46);
+  color: wheat;
+  font-size: 1rem;
+}
+
+form button{
+  width: 90%;
+  background-color: rgb(68, 46, 46);
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 1.5rem;
+  color: white;
+  padding-block: 1rem;
+  cursor: pointer;
+}
+
+input{
+  padding: 1rem;
+  outline: none;
+}
+
+input::placeholder{
+  color: wheat;
+  font-size: 1rem;
+}
+
+
+
+.notes{
+  display: flex;
+  gap: 2rem;
+  padding-inline: 1rem;
+  padding-block: 2rem;
+}
+
+.note{
+  background-color: rgb(96, 57, 57);
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 20rem;
+  color: wheat;
+  /* display: inline-block; */
+}
+
+.buttons{
+  padding-block: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.buttons button{
+  padding-block: 0.2rem;
+  padding-inline: 0.5rem;
+  font-size: 1rem;
+  background-color: rgb(179, 177, 177);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
