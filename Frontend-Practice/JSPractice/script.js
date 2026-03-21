@@ -1177,3 +1177,37 @@
 // const doubled = numbers.myMap((num) => num * 2);
 
 // console.log(doubled);
+
+
+
+
+
+
+
+
+
+// Custom reduce
+
+
+// Array.prototype.myReduce = function (callback, initialValue) {
+//   let accumulator = initialValue;
+//   let startIndex = 0;
+
+//   if (accumulator === undefined) {
+//     accumulator = this[0];
+//     startIndex = 1;
+//   }
+
+//   for (let i = startIndex; i < this.length; i++) {
+//     accumulator = callback(accumulator, this[i], i, this);
+//   }
+
+//   return accumulator;
+// };
+
+// // Example usage
+// const numbers = [1, 2, 3, 4];
+
+// const sum = numbers.myReduce((acc, curr) => acc + curr, 0);
+
+// console.log(sum);
