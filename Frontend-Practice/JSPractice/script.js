@@ -1239,3 +1239,38 @@
 // const evens = numbers.myFilter((num) => num % 2 === 0);
 
 // console.log(evens);
+
+
+
+
+
+
+
+
+
+
+
+// customBind.js
+
+
+
+// Function.prototype.myBind = function (context, ...args1) {
+//   const fn = this;
+
+//   return function (...args2) {
+//     return fn.apply(context, [...args1, ...args2]);
+//   };
+// };
+
+// // Example usage
+// const person = {
+//   name: "Vansh"
+// };
+
+// function greet(age, city) {
+//   console.log(`Hi, I am ${this.name}, ${age} years old from ${city}`);
+// }
+
+// const boundGreet = greet.myBind(person, 21);
+
+// boundGreet("Roorkee");
