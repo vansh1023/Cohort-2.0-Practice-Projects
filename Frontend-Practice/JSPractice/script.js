@@ -1274,3 +1274,38 @@
 // const boundGreet = greet.myBind(person, 21);
 
 // boundGreet("Roorkee");
+
+
+
+
+
+
+
+
+
+// customCall.js
+
+
+// Function.prototype.myCall = function (context, ...args) {
+//   context = context || globalThis;
+
+//   const uniqueKey = Symbol(); // avoid overwriting
+//   context[uniqueKey] = this;
+
+//   const result = context[uniqueKey](...args);
+
+//   delete context[uniqueKey];
+
+//   return result;
+// };
+
+// // Example usage
+// const person = {
+//   name: "Vansh"
+// };
+
+// function greet(age, city) {
+//   console.log(`Hi, I am ${this.name}, ${age} years old from ${city}`);
+// }
+
+// greet.myCall(person, 21, "Roorkee");
