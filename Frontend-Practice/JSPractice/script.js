@@ -1309,3 +1309,39 @@
 // }
 
 // greet.myCall(person, 21, "Roorkee");
+
+
+
+
+
+
+
+
+// customApply.js
+
+
+
+
+// Function.prototype.myApply = function (context, argsArray) {
+//   context = context || globalThis;
+
+//   const uniqueKey = Symbol();
+//   context[uniqueKey] = this;
+
+//   const result = context[uniqueKey](...(argsArray || []));
+
+//   delete context[uniqueKey];
+
+//   return result;
+// };
+
+// // Example usage
+// const person = {
+//   name: "Vansh"
+// };
+
+// function greet(age, city) {
+//   console.log(`Hi, I am ${this.name}, ${age} years old from ${city}`);
+// }
+
+// greet.myApply(person, [21, "Roorkee"]);
