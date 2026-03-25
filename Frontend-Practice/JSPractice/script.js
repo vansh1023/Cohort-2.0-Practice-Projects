@@ -1345,3 +1345,77 @@
 // }
 
 // greet.myApply(person, [21, "Roorkee"]);
+
+
+
+
+
+
+
+
+
+
+
+
+// customPromise.js
+
+
+
+
+// class MyPromise {
+//   constructor(executor) {
+//     this.state = "pending";
+//     this.value = undefined;
+//     this.handlers = [];
+
+//     const resolve = (value) => {
+//       if (this.state !== "pending") return;
+
+//       this.state = "fulfilled";
+//       this.value = value;
+
+//       this.handlers.forEach(h => h.onFulfilled(value));
+//     };
+
+//     const reject = (error) => {
+//       if (this.state !== "pending") return;
+
+//       this.state = "rejected";
+//       this.value = error;
+
+//       this.handlers.forEach(h => h.onRejected(error));
+//     };
+
+//     executor(resolve, reject);
+//   }
+
+//   then(onFulfilled, onRejected) {
+//     return new MyPromise((resolve, reject) => {
+//       this.handlers.push({
+//         onFulfilled: (value) => {
+//           try {
+//             const result = onFulfilled ? onFulfilled(value) : value;
+//             resolve(result);
+//           } catch (err) {
+//             reject(err);
+//           }
+//         },
+//         onRejected: (error) => {
+//           try {
+//             const result = onRejected ? onRejected(error) : error;
+//             reject(result);
+//           } catch (err) {
+//             reject(err);
+//           }
+//         }
+//       });
+//     });
+//   }
+// }
+
+//  Example usage
+// const p = new MyPromise((resolve, reject) => {
+//   setTimeout(() => resolve("Success 🚀"), 1000);
+// });
+
+// p.then(res => console.log(res));
