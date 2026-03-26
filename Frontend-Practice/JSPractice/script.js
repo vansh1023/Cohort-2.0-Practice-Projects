@@ -1419,3 +1419,63 @@
 // });
 
 // p.then(res => console.log(res));
+
+
+
+
+
+
+
+
+
+
+// eventEmitter.js
+
+
+
+// class EventEmitter {
+//   constructor() {
+//     this.events = {};
+//   }
+
+//   // Register event
+//   on(eventName, listener) {
+//     if (!this.events[eventName]) {
+//       this.events[eventName] = [];
+//     }
+//     this.events[eventName].push(listener);
+//   }
+
+//   // Emit event
+//   emit(eventName, ...args) {
+//     if (this.events[eventName]) {
+//       this.events[eventName].forEach(listener => {
+//         listener(...args);
+//       });
+//     }
+//   }
+
+//   // Remove event
+//   off(eventName, listenerToRemove) {
+//     if (!this.events[eventName]) return;
+
+//     this.events[eventName] = this.events[eventName].filter(
+//       listener => listener !== listenerToRemove
+//     );
+//   }
+// }
+
+// // Example usage
+// const emitter = new EventEmitter();
+
+// function greet(name) {
+//   console.log(`Hello, ${name}!`);
+// }
+
+// emitter.on("greet", greet);
+
+// emitter.emit("greet", "Vansh"); 
+
+// emitter.off("greet", greet);
+
+// emitter.emit("greet", "Vansh"); 
