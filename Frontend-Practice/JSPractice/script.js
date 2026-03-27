@@ -1535,3 +1535,51 @@
 
 // lru.put(3, 3); // removes key 2
 // console.log(lru.get(2)); // -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// memoize.js
+
+
+
+// function memoize(fn) {
+//   const cache = {};
+
+//   return function (...args) {
+//     const key = JSON.stringify(args);
+
+//     if (cache[key]) {
+//       console.log("From cache");
+//       return cache[key];
+//     }
+
+//     const result = fn(...args);
+//     cache[key] = result;
+
+//     return result;
+//   };
+// }
+
+// // Example
+// function slowAdd(a, b) {
+//   console.log("Calculating...");
+//   return a + b;
+// }
+
+// const fastAdd = memoize(slowAdd);
+
+// console.log(fastAdd(2, 3)); // Calculating...
+// console.log(fastAdd(2, 3)); // From cache
