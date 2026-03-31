@@ -1634,3 +1634,17 @@
 
 
 
+// function compose(...fns) {
+//   return function (value) {
+//     return fns.reduceRight((acc, fn) => fn(acc), value);
+//   };
+// }
+
+// // Example
+// const add = (x) => x + 2;
+// const multiply = (x) => x * 3;
+// const subtract = (x) => x - 1;
+
+// const result = compose(subtract, multiply, add);
+
+// console.log(result(5));
