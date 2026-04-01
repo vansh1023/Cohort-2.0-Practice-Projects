@@ -1648,3 +1648,52 @@
 // const result = compose(subtract, multiply, add);
 
 // console.log(result(5));
+
+
+
+
+
+
+
+
+
+// Retry Function (API Calls with Retry Logic)
+
+
+// function retry(fn, retries, delay) {
+//   return new Promise((resolve, reject) => {
+//     function attempt(currentTry) {
+//       fn()
+//         .then(resolve)
+//         .catch((err) => {
+//           if (currentTry < retries) {
+//             console.log(`Retrying... Attempt ${currentTry + 1}`);
+//             setTimeout(() => {
+//               attempt(currentTry + 1);
+//             }, delay);
+//           } else {
+//             reject(err);
+//           }
+//         });
+//     }
+
+//     attempt(0);
+//   });
+// }
+
+// // Example usage
+// function mockApi() {
+//   return new Promise((resolve, reject) => {
+//     const success = Math.random() > 0.7;
+
+//     if (success) {
+//       resolve("API Success 🚀");
+//     } else {
+//       reject("API Failed ❌");
+//     }
+//   });
+// }
+
+// retry(mockApi, 3, 1000)
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));
