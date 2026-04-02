@@ -1697,3 +1697,44 @@
 // retry(mockApi, 3, 1000)
 //   .then((res) => console.log(res))
 //   .catch((err) => console.log(err));
+
+
+
+
+
+
+
+
+
+// rateLimiter.js
+
+
+function rateLimiter(fn, limit, interval) {
+  let queue = [];
+  let activeCalls = 0;
+
+  function next() {
+    if (queue.length === 0 || activeCalls >= limit) return;
+
+    activeCalls++;
+
+    const { args, resolve } = queue.shift();
+
+    fn(...args).then((result) => {
+      resolve(result);
+    }).finally(() => {
+      activeCalls--;
+
+      setTimeout(() => {
+        next();
+      }, interval);
+    });
+  }
+
+  return function (...args) {
+    return new Promise((resolve) => {
+      queue.push({ args, resolve });
+      next();
+    });
+  };
+}
