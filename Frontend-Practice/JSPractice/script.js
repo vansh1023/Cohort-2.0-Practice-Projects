@@ -1738,3 +1738,20 @@ function rateLimiter(fn, limit, interval) {
     });
   };
 }
+
+
+
+// Example usage
+function mockApi(id) {
+  return new Promise((resolve) => {
+    console.log("Calling API:", id);
+    setTimeout(() => resolve(`Done ${id}`), 500);
+  });
+}
+
+const limitedApi = rateLimiter(mockApi, 2, 1000);
+
+// Fire multiple requests
+for (let i = 1; i <= 5; i++) {
+  limitedApi(i).then(console.log);
+}
