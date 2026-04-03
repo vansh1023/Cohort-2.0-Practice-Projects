@@ -1709,49 +1709,49 @@
 // rateLimiter.js
 
 
-function rateLimiter(fn, limit, interval) {
-  let queue = [];
-  let activeCalls = 0;
+// function rateLimiter(fn, limit, interval) {
+//   let queue = [];
+//   let activeCalls = 0;
 
-  function next() {
-    if (queue.length === 0 || activeCalls >= limit) return;
+//   function next() {
+//     if (queue.length === 0 || activeCalls >= limit) return;
 
-    activeCalls++;
+//     activeCalls++;
 
-    const { args, resolve } = queue.shift();
+//     const { args, resolve } = queue.shift();
 
-    fn(...args).then((result) => {
-      resolve(result);
-    }).finally(() => {
-      activeCalls--;
+//     fn(...args).then((result) => {
+//       resolve(result);
+//     }).finally(() => {
+//       activeCalls--;
 
-      setTimeout(() => {
-        next();
-      }, interval);
-    });
-  }
+//       setTimeout(() => {
+//         next();
+//       }, interval);
+//     });
+//   }
 
-  return function (...args) {
-    return new Promise((resolve) => {
-      queue.push({ args, resolve });
-      next();
-    });
-  };
-}
+//   return function (...args) {
+//     return new Promise((resolve) => {
+//       queue.push({ args, resolve });
+//       next();
+//     });
+//   };
+// }
 
 
 
-// Example usage
-function mockApi(id) {
-  return new Promise((resolve) => {
-    console.log("Calling API:", id);
-    setTimeout(() => resolve(`Done ${id}`), 500);
-  });
-}
+// // Example usage
+// function mockApi(id) {
+//   return new Promise((resolve) => {
+//     console.log("Calling API:", id);
+//     setTimeout(() => resolve(`Done ${id}`), 500);
+//   });
+// }
 
-const limitedApi = rateLimiter(mockApi, 2, 1000);
+// const limitedApi = rateLimiter(mockApi, 2, 1000);
 
-// Fire multiple requests
-for (let i = 1; i <= 5; i++) {
-  limitedApi(i).then(console.log);
-}
+// // Fire multiple requests
+// for (let i = 1; i <= 5; i++) {
+//   limitedApi(i).then(console.log);
+// }
