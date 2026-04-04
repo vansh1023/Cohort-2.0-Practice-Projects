@@ -1755,3 +1755,97 @@
 // for (let i = 1; i <= 5; i++) {
 //   limitedApi(i).then(console.log);
 // }
+
+
+
+
+
+
+
+
+
+// priority queue
+
+
+// class PriorityQueue {
+//   constructor() {
+//     this.heap = [];
+//   }
+
+//   // Helper methods
+//   getParentIndex(i) { return Math.floor((i - 1) / 2); }
+//   getLeftChild(i) { return 2 * i + 1; }
+//   getRightChild(i) { return 2 * i + 2; }
+
+//   swap(i, j) {
+//     [this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]];
+//   }
+
+//   // Add element
+//   enqueue(value, priority) {
+//     this.heap.push({ value, priority });
+//     this.heapifyUp();
+//   }
+
+//   heapifyUp() {
+//     let index = this.heap.length - 1;
+
+//     while (
+//       index > 0 &&
+//       this.heap[this.getParentIndex(index)].priority >
+//         this.heap[index].priority
+//     ) {
+//       this.swap(index, this.getParentIndex(index));
+//       index = this.getParentIndex(index);
+//     }
+//   }
+
+//   // Remove element
+//   dequeue() {
+//     if (this.heap.length === 0) return null;
+
+//     const min = this.heap[0];
+//     const end = this.heap.pop();
+
+//     if (this.heap.length > 0) {
+//       this.heap[0] = end;
+//       this.heapifyDown();
+//     }
+
+//     return min;
+//   }
+
+//   heapifyDown() {
+//     let index = 0;
+
+//     while (this.getLeftChild(index) < this.heap.length) {
+//       let smallerChild = this.getLeftChild(index);
+//       const right = this.getRightChild(index);
+
+//       if (
+//         right < this.heap.length &&
+//         this.heap[right].priority < this.heap[smallerChild].priority
+//       ) {
+//         smallerChild = right;
+//       }
+
+//       if (
+//         this.heap[index].priority <=
+//         this.heap[smallerChild].priority
+//       ) break;
+
+//       this.swap(index, smallerChild);
+//       index = smallerChild;
+//     }
+//   }
+// }
+
+// // Example usage
+// const pq = new PriorityQueue();
+
+// pq.enqueue("Task A", 3);
+// pq.enqueue("Task B", 1);
+// pq.enqueue("Task C", 2);
+
+// console.log(pq.dequeue()); // Task B (highest priority)
+// console.log(pq.dequeue()); // Task C
