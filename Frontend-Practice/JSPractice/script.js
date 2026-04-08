@@ -1849,3 +1849,19 @@
 
 // console.log(pq.dequeue()); // Task B (highest priority)
 // console.log(pq.dequeue()); // Task C
+
+
+
+
+
+
+// reverseWords.js
+
+
+// function reverseWords(str) {
+//   return str.split(" ").reverse().join(" ");
+// }
+
+// // Example
+// console.log(reverseWords("I am learning JavaScript"));
+// Output: "JavaScript learning am I"
