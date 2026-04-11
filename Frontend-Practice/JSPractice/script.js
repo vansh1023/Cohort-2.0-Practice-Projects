@@ -1865,3 +1865,12 @@
 // // Example
 // console.log(reverseWords("I am learning JavaScript"));
 // Output: "JavaScript learning am I"
+
+
+
+
+
+
+
+
+// palindrome.js
